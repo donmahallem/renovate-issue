@@ -1,0 +1,79 @@
+{
+    "automerge": true,
+    "dependencyDashboard": true,
+    "extends": [
+        "config:base",
+        ":prHourlyLimit4"
+    ],
+    "lockFileMaintenance": true,
+    "labels": [
+        "dependencies"
+    ],
+    "packageRules": [
+        {
+            "groupName": "@donmahallem/turbo packages",
+            "matchPackagePatterns": [
+                "^@donmahallem/turbo"
+            ]
+        },
+        {
+            "groupName": "rollup packages",
+            "matchPackagePatterns": [
+                "^@donmahallem/rollup-config",
+                "^@rollup/plugin",
+                "^rollup$"
+            ]
+        },
+        {
+            "groupName": "manniwatch monorepo {{currentVersion}}",
+            "matchPackagePatterns": [
+                "^@manniwatch/"
+            ]
+        },
+        {
+            "groupName": "octokit monorepo {{currentVersion}}",
+            "matchPackagePatterns": [
+                "^@octokit/"
+            ]
+        },
+        {
+            "groupName": "ajv {{currentVersion}}",
+            "matchPackageNames": [
+                "ajv",
+                "ajv-formats"
+            ],
+            "matchSourceUrlPrefixes": [
+                "https://github.com/ajv-validator",
+                "git+https://github.com/ajv-validator"
+            ]
+        },
+        {
+            "depTypeList": [
+                "devDependencies"
+            ],
+            "rangeStrategy": "pin",
+            "pin": true
+        },
+        {
+            "depTypeList": [
+                "dependencies"
+            ],
+            "rangeStrategy": "bump"
+        },
+        {
+            "depTypeList": [
+                "peerDependencies",
+                "optionalDependencies"
+            ],
+            "rangeStrategy": "replace"
+        },
+        {
+            "matchPackageNames": [
+                "renovate"
+            ],
+            "extends": [
+                "schedule:weekly"
+            ]
+        }
+    ]
+}

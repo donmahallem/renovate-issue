@@ -1,0 +1,6 @@
+{
+  "name": "@donmahallem/renovate-config",
+  "devDependencies": {
+    "renovate": "29.27.0"
+  }
+}
