@@ -1,5 +1,5 @@
 {
-    "name": "@donmahallem/remark-lerna-packages",
+    "name": "b",
     "version": "0.2.5",
     "devDependencies": {
         "remark-gfm": "3.0.1",
