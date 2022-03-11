@@ -1,5 +1,5 @@
 {
-    "automerge": false,
+    "automerge": true,
     "branchConcurrentLimit":40,
     "prCreation": "status-success",
     "dependencyDashboard": true,
