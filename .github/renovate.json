@@ -1,6 +1,7 @@
 {
     "automerge": false,
     "branchConcurrentLimit":40,
+    "prCreation": "status-success",
     "dependencyDashboard": true,
     "extends": [
         "config:base",
