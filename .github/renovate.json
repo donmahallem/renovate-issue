@@ -3,6 +3,7 @@
     "branchConcurrentLimit":40,
     "prCreation": "status-success",
     "dependencyDashboard": true,
+    "postUpdateOptions": [],
     "extends": [
         "config:base",
         ":prHourlyLimit4"
