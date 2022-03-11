@@ -1,5 +1,6 @@
 {
     "automerge": false,
+    "branchConcurrentLimit":40,
     "dependencyDashboard": true,
     "extends": [
         "config:base",
